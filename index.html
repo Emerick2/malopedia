@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Malopédia est le lieu ou vous pouvez retrouver tous les malomons !">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Malopédia</title>
+    <link rel="icon" type="image/png" href="La liste des normeaux/De 1 à 300 !/173.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="précédant"onclick="Suivant(-1)">précédant</button>
+    <button id="suivant" onclick="Suivant(1)">suivant</button>
+
+    <div id="carre">
+        <h2 id="nom">nom</h2>
+        <p id="numéro">N°2</p>
+        <img id="type1" src="types/Acier.png">
+        <img id="type2" src="types/fée.png">
+        <img id="malomon" src="La liste des normeaux/De 1 à 300 !/64 - Roclaclape.png">
+        <p id="description">description</p>
+
+        <table id="évolution"></table>
+
+<!-- <table>
+    <tr>
+        <th colspan="2">
+        <img src="forme-pokedex-malomalo.png"
+            style="height: 32px; vertical-align: middle; margin-right: 8px;">
+            <p></p>
+            Famille</th>
+    </tr>
+    <tr>
+        <td colspan="2">Tarsal</td>
+    </tr>
+    <tr>
+        <td colspan="2">niveau 20</td>
+    </tr>
+    <tr>
+        <td colspan="2">Kirlia</td>
+    </tr>
+    <tr>
+        <td>Niveau 30</td>
+        <td>pierre aube</td>
+    </tr>
+    <tr>
+        <td>Gardevoir</td>
+        <td>Gallame</td>
+    </tr>
+</table>
+<hr> pour faire un trait
+-->
+
+
+
+
+        <button onclick="Search(0)">Rechercher</button>
+        <input type="number" id="Numéro choisie">
+        <p></p>
+        <button onclick="Search(1)">Rechercher</button>
+        <input id="Nom chercher">
+    </div>
+    <script src="Gestionnaire.js"></script>
+</body>
+</html>
