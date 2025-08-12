@@ -154,6 +154,8 @@ function ChargerPesonnage() {
     else document.getElementById("type1").src = "";
     if (mesDictionnaire[ID-1]["type2"]!="")document.getElementById("type2").src = "types/" + mesDictionnaire[ID - 1]["type2"]+".png";
     else document.getElementById("type2").src = "";
+    document.getElementById("carre").style.backgroundImage =
+        `linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.9)), url("fondIA/${mesDictionnaire[ID - 1]["type1"]}.png")`; 
     PlacerLesEvolution();
 }
 function TrouverNomImage(numero, milieu, extension = "png") {

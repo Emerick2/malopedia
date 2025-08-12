@@ -2,9 +2,11 @@
     width: 30%;
 }
 #carre {
-    /* background-image: url("forme-pokedex-malomalo.png");
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+        url("fondIA/dragon.png");
     background-size: cover;
-    background-position: center; */
+    background-position: center;
 
     position: absolute;
     top: 10%;
