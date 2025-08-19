@@ -1,0 +1,191 @@
+button{
+    background-color: bisque;
+    border-radius: 40px;
+    color: royalblue;
+    text-align: center;
+    display:inline-block;
+    padding:20px;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 5px;
+}
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #f7c2f9;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+img {
+    filter:invert(0%);
+    /* filter: blur(2px); */
+    /* Effet de base */
+    transition: filter 0.5s;
+    /* Transition fluide */
+    transition: 0.2s;
+}
+
+input:focus {
+    transform: scale(1.5);
+    transition: 0.2s;
+}
+p:focus {
+    transform: scale(1.5);
+    transition: 0.2s;
+}
+button:disabled {
+    opacity: 0.5;
+}
+
+button:before {
+    content: "→ ";
+    opacity: 20%;
+}
+#container {
+    display: grid;
+        grid-template-columns: 2fr 3fr;
+        /* une colonne étroite, une large */
+        gap: 20px;
+}
+#titre{
+    top:0%;
+    left:0%;
+    filter: grayscale(0%);
+}
+#BarreDeSélection {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #ffd900;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .12);
+    display: flex;
+    align-items: flex-start; /* aligne en haut */
+    /* justify-content: center;*/
+    gap: 10px; /* espace entre les boutons */
+    padding: 10px 0;
+}
+#effetImage{
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .12);
+    border-radius: 50%;
+    background: #ffd900;
+    filter: grayscale(100%);
+}
+#effetImage:hover {
+    filter: grayscale(0%);
+    transform: scale(1.15);
+    animation: 0.1s;
+    transform: rotate(-10deg);
+}
+#titre:hover {
+    animation: 0.1s;
+    filter: grayscale(10%);
+    transform: scale(1.15);
+    transform: rotate(-10deg);
+}
+h1{
+    font-size: 500%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:oblique;
+    color: white;
+    text-shadow: 1px 1px 6px rgb(0, 0, 0);
+    text-align: center;
+}
+#carteDuMonde{
+    filter: grayscale(0%);
+    border-radius: 1%;
+}
+
+.map-container {
+    position: relative;
+    display: inline-block;
+}
+
+.map-pointer {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Petite infobulle personnalisée */
+.map-pointer::after {
+    content: attr(data-name);
+    /* récupère le nom du pointeur */
+    position: absolute;
+    bottom: 125%;
+    /* au-dessus du point */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+/* Affiche le texte au survol */
+.map-pointer:hover::after {
+    opacity: 1;
+}
+
+
+
+.forme:hover {
+    width: 230px;
+    height: 200px;
+    background: rgb(165, 98, 112);
+    clip-path: polygon(
+        0%0%,
+        0%100%,
+        100%50%);
+    opacity: 0.8;
+}
+
+.forme {
+    width: 200px;
+    height: 200px;
+    background: rgb(80, 19, 31);
+    clip-path: polygon(0%0%,
+            0%100%,
+            100%50%);
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+.forme2 {
+    width: 200px;
+    height: 500px;
+    background: rgb(80, 19, 31);
+    border-radius: 5%;
+}
+p{
+    color: rgb(255, 255, 255);
+}
